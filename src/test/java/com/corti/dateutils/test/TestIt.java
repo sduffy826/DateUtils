@@ -38,13 +38,13 @@ public class TestIt {
     
     System.out.println("Changing default zone");
     TimeZoneUtils.setDefaultTimeId("US/Pacific");
-    System.out.println(TimeZoneUtils.getCurrentZoneId());
+    System.out.println("Current timezone: " + TimeZoneUtils.getCurrentZoneId());
     
     System.out.println("aDate is: " + aDate);  
         
     System.out.println("Changing timezone back to NY");
     TimeZoneUtils.setDefaultTimeId("America/New_York");
-    System.out.println(TimeZoneUtils.getCurrentZoneId());
+    System.out.println("Current timezone: " + TimeZoneUtils.getCurrentZoneId());
     
     System.out.println("aDate is: " + aDate);     
   }
