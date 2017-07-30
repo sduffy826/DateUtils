@@ -40,8 +40,12 @@ public class TestIt {
     TimeZoneUtils.setDefaultTimeId("US/Pacific");
     System.out.println(TimeZoneUtils.getCurrentZoneId());
     
-    System.out.print("aDate is: " + aDate);
+    System.out.println("aDate is: " + aDate);  
+        
+    System.out.println("Changing timezone back to NY");
+    TimeZoneUtils.setDefaultTimeId("America/New_York");
+    System.out.println(TimeZoneUtils.getCurrentZoneId());
     
+    System.out.println("aDate is: " + aDate);     
   }
-
 }
